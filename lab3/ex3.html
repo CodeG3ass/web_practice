@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var n = 10
+        var arr = [];
+        var sum =0;
+        var sum_array = [];
+        var zeros = 0
+        var m = 0;
+        var m_array = []
+        for(i=0; i<=n; i++){
+            num =Math.round(Math.random()*40)-10
+            arr[i] = num;
+        }
+        for(i=0; i<arr.length; i++ ){
+            if(arr[i] > 0){
+                sum+=arr[i]
+                sum_array.push(arr[i] );
+            }
+            if(arr[i] === 0){
+                zeros+=1
+            }
+            if(arr[i] < 0){
+                m+=arr[i]
+                m_array.push(arr[i] );
+            }
+        }
+        alert('Среднее арифметическое +: ' + Number(sum/sum_array.length))
+        alert('Среднее арифметическое -: ' + Number(m/m_array.length))
+        alert('Число  0: ' + Number(zeros))
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

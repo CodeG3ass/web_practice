@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var n = 10
+        var arr = [];
+        var sum = 0;
+        for(i=0; i<=n; i++){
+            num =Math.round(Math.random()*40)-10
+            if(num > 0){
+                sum+=num;
+            }
+            arr[i] = num;
+        }
+        alert('Массив 1= ' + arr);
+        for(i=0; i< arr.length; i++){
+            if(arr[i] < 0 ){
+                arr[i] *=arr[i]
+            }
+        }
+        alert('Массив 2 = ' + arr);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

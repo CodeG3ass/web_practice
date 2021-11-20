@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var num = 0
+        var sum_red = 0
+        for(i=0; i<=1000000; i++) {
+            num=Math.round(Math.random()*3);
+            if(num == 0){
+                sum_red+=1
+            }
+        }
+        alert("Число красных: " + Number(sum_red))
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+      var surname = prompt('Vvod: ')
+      var yn = true
+      for(var i=0; i< surname.length/2; i++){
+          if(surname[i].toLowerCase() !== surname[surname.length-i-1].toLowerCase()){
+              yn = false
+              break
+          }
+          else{
+              yn = true
+          }
+      }
+      if( yn === true){
+          alert('палиндром')
+      }
+      else {
+          alert('не палиндром')
+      }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

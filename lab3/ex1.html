@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var n = 15;
+        var arr = [];
+        var sum = 0;
+        for(i=0; i<=n; i++){
+            num =Math.round(Math.random()*40)-10
+            if(num > 0){
+                sum+=num
+            }
+            arr.push(num);
+        }
+        alert('Среднее арифметическое = ' + Number(sum/arr.length))
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

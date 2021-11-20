@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let num = parseInt(prompt("Vvod: "));
+        let flag = false;
+        for (let i = 2; i < num; i++) {
+            if (num % i !== 0) {
+                flag = true;
+            }else {
+                flag = false;
+                alert('Нет')
+                break;
+            }
+        }
+        if(flag === true){
+            alert('Да')
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
